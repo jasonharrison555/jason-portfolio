@@ -1,0 +1,92 @@
+/* Hide the radio buttons */
+.radio {
+  display: none;
+}
+
+/* Button styling */
+.button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+/* Image container */
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Image styling */
+.image {
+  width: 60%;
+  transition: all 0.3s ease;
+}
+
+/* Information box */
+.info {
+  margin-left: 20px;
+}
+
+/* Title styling */
+.title {
+  font-size: 24px;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+/* Link styling */
+.link {
+  font-size: 18px;
+  color: #007BFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Change the image, title, and link when image1 is selected */
+#image1:checked ~ .content .image {
+  content: url("/images/band_poster.png");
+}
+
+#image1:checked ~ .content .title {
+  content: "Title 1";
+}
+
+#image1:checked ~ .content .link {
+  content: "Go to Image 1";
+  href: "https://www.example1.com";
+}
+
+/* Change the image, title, and link when image2 is selected */
+#image2:checked ~ .content .image {
+  content: url("/images/collage.png");
+}
+
+#image2:checked ~ .content .title {
+  content: "Title 2";
+}
+
+#image2:checked ~ .content .link {
+  content: "Go to Image 2";
+  href: "https://www.example2.com";
+}
+
+/* Change the image, title, and link when image3 is selected */
+#image3:checked ~ .content .image {
+  content: url("/images/image1.png");
+}
+
+#image3:checked ~ .content .title {
+  content: "Title 3";
+}
+
+#image3:checked ~ .content .link {
+  content: "Go to Image 3";
+  href: "https://www.example3.com";
+}
+
+/*# sourceMappingURL=img.css.map */

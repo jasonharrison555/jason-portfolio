@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+/*colors*/
+$green: #015380 ;
+$orange: #DDA15E;
+$tan: #FEFAE0;
+$darkgreen: #283618;
+$shadowtext:2px 2px 5px black;
+$heading_font: 5.5em;
+$paragraph_font1: 30px ;
+$paragraph_font2: 20px ;
+$font_header: "Permanent Marker", serif;
+$font_par: "Cantata One", serif;
+
+/*Fonts*/
+h1, h2 {
+  font-family: $font_header;
+  font-weight: 400;
+  color: $green;
+}
+
+ p{
+  font-family: $font_par;
+  font-weight: 400;
+  color: $green;
+}
+
+/*navbar*/
+html{
+  height: auto;
+    margin: 0px;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: $tan;
+  .top_nav  {
+    display: flex;
+  justify-content: right;
+    font-size: 1.4em;
+    padding-right: 20%;
+    padding-top: 5%;
+}
+  
+  section {
+    padding-left: 10%;
+    padding-top: 4%;
+  }
+  
+  section img{
+    width: 20%;
+  }
+}
+
+nav  {
+    
+    text-align: center;
+   
+    a:hover {
+      background-color: $orange;
+      color: $green;
+      width: 300px;
+      transition: 1s;
+    }
+
+    a {
+      border-radius: 10px;
+      padding: 10px ;
+      text-decoration: none;
+       color: $green;
+  }
+}
+
+
+
+ul {
+    display: flex;
+    padding: 50px 0px 50px 65px;
+    list-style-type: none; 
+    margin: 0;
+    
+}
+ h1{
+    margin: 0;
+ }
+
+
+/*banner img 
+ .banner{
+  @include word_position;
+  text-shadow: $shadowtext;
+  h1{
+    font-size: $heading_font;
+      h2 {
+        text-align: left;
+    }
+  } 
+
+ }
+  */
+
+  @mixin word_position {
+    position: relative;
+    text-align: left;
+    color: $tan;
+    margin: 0;
+    
+    img {
+      width: 100%;
+    }
+  
+   }
+  /*banner img*/
+   .banner{
+    @include word_position; 
+    height: 600px;
+    justify-items: left;
+    align-items: center;
+    padding-left: 0%; 
+    .banner_header {
+      position: absolute;
+      top: 15%;
+      left: 19%;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 4.7em;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+.banner_text{
+  position: absolute;
+  top: 60%;
+  left: 72%;
+  width: 25%;
+  h2, p {
+    margin: 0%;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+  /*website can make one sectino longer than other using flex*/
+
+.banner img{  
+  width: 100%;
+
+padding: 0% 0% 0% 0%;
+}
+
+/*portfolio links*/
+#portfolio_link{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 4.5em;
+
+}
+
+/*portfolio page*/
+
+  .portfolio_banner{
+    height: 100px;
+    justify-items: left;
+    align-items: center;
+    padding-left: 15%;
+    padding-bottom: 50px;
+    h1 {
+      font-size: 4.5em;
+      padding: 0;
+      margin: 0;
+    }
+    h2 {
+      margin-bottom: 0;
+      
+    }
+    p{
+      margin: 0%;
+      width: 400px;
+
+    }
+  }
+
+
+  /*background */
+main{
+  position: relative;
+  background: $tan;
+}
+
+.portfolio{
+  display: flex;
+  padding: 0 0 20px 15%;
+  justify-items: center;
+  align-items: center;
+  p, h2{
+    padding: 0 15% 0 10%;
+  }
+}
+
+.portfolio2{
+  display: flex;
+  padding: 5% 15% 50px 10%;
+  justify-items: center;
+  align-items: center;
+ div{
+    padding: 0% 0% 0% 5%;
+  }
+  img {
+    padding-left: 0%;
+  }
+}
+
+ /*footer*/
+  
+ footer{
+  background-color: $green;
+  color: $tan;
+  h1{
+    color: $tan;
+  }
+}
+
+/*medium css*/
+@media all and (max-width: 991px){
+  .banner {
+    h1{
+      font-size: 2em;
+    }
+  }  
+}
+
+/*portfolio page*/
+
+

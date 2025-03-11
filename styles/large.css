@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cantata+One&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+/*colors*/
+/*Fonts*/
+h1, h2 {
+  font-family: "Permanent Marker", serif;
+  font-weight: 400;
+  color: #015380;
+}
+
+p {
+  font-family: "Cantata One", serif;
+  font-weight: 400;
+  color: #015380;
+}
+
+/*navbar*/
+html {
+  height: auto;
+  margin: 0px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #FEFAE0;
+}
+header .top_nav {
+  display: flex;
+  justify-content: right;
+  font-size: 1.4em;
+  padding-right: 20%;
+  padding-top: 5%;
+}
+header section {
+  padding-left: 10%;
+  padding-top: 4%;
+}
+header section img {
+  width: 20%;
+}
+
+nav {
+  text-align: center;
+}
+nav a:hover {
+  background-color: #DDA15E;
+  color: #015380;
+  width: 300px;
+  transition: 1s;
+}
+nav a {
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #015380;
+}
+
+ul {
+  display: flex;
+  padding: 50px 0px 50px 65px;
+  list-style-type: none;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*banner img 
+ .banner{
+  @include word_position;
+  text-shadow: $shadowtext;
+  h1{
+    font-size: $heading_font;
+      h2 {
+        text-align: left;
+    }
+  } 
+
+ }
+  */
+/*banner img*/
+.banner {
+  position: relative;
+  text-align: left;
+  color: #FEFAE0;
+  margin: 0;
+  height: 600px;
+  justify-items: left;
+  align-items: center;
+  padding-left: 0%;
+}
+.banner img {
+  width: 100%;
+}
+.banner .banner_header {
+  position: absolute;
+  top: 15%;
+  left: 19%;
+  line-height: 1;
+}
+.banner h1 {
+  font-size: 4.7em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.banner_text {
+  position: absolute;
+  top: 60%;
+  left: 72%;
+  width: 25%;
+}
+.banner_text h2, .banner_text p {
+  margin: 0%;
+}
+.banner_text p {
+  font-size: 12px;
+}
+
+/*website can make one sectino longer than other using flex*/
+.banner img {
+  width: 100%;
+  padding: 0% 0% 0% 0%;
+}
+
+/*portfolio links*/
+#portfolio_link {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 4.5em;
+}
+
+/*portfolio page*/
+.portfolio_banner {
+  height: 100px;
+  justify-items: left;
+  align-items: center;
+  padding-left: 15%;
+  padding-bottom: 50px;
+}
+.portfolio_banner h1 {
+  font-size: 4.5em;
+  padding: 0;
+  margin: 0;
+}
+.portfolio_banner h2 {
+  margin-bottom: 0;
+}
+.portfolio_banner p {
+  margin: 0%;
+  width: 400px;
+}
+
+/*background */
+main {
+  position: relative;
+  background: #FEFAE0;
+}
+
+.portfolio {
+  display: flex;
+  padding: 0 0 20px 15%;
+  justify-items: center;
+  align-items: center;
+}
+.portfolio p, .portfolio h2 {
+  padding: 0 15% 0 10%;
+}
+
+.portfolio2 {
+  display: flex;
+  padding: 5% 15% 50px 10%;
+  justify-items: center;
+  align-items: center;
+}
+.portfolio2 div {
+  padding: 0% 0% 0% 5%;
+}
+.portfolio2 img {
+  padding-left: 0%;
+}
+
+/*footer*/
+footer {
+  background-color: #015380;
+  color: #FEFAE0;
+}
+footer h1 {
+  color: #FEFAE0;
+}
+
+/*medium css*/
+@media all and (max-width: 991px) {
+  .banner h1 {
+    font-size: 2em;
+  }
+}
+/*portfolio page*/
+
+/*# sourceMappingURL=large.css.map */

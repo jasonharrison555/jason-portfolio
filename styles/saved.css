@@ -1,0 +1,74 @@
+/* Meet the Animals*/ 
+.animals_shop{
+    align-items: center;
+    justify-items: center;
+    h1 {
+      color: $green;
+      font-size: 40px;
+      padding-top: 20px;
+    }
+  }
+  .animal_pics{
+    align-items: center;
+    justify-items: center;
+    padding-left: 50px;
+    img{
+      width: 22%;
+      padding: 30px 30px 30px 0px;
+    }
+  }
+  
+  /*shop animals button*/
+  @mixin button {
+    font-size: $paragraph_font1;
+    color: $tan;
+    background-color: $green;
+    padding: 10px;
+    border: none;
+    &:hover {
+      background-color: $orange;
+      color: $tan;
+      border-radius: 10px;
+      transition: 1s;
+    }
+  }
+  .animals_button{
+  @include button;
+  }
+  
+  
+  
+  /*Our Mission*/
+  .mission{
+    padding-top: 2%;
+    @include word_position; 
+   }
+    .mission .image_text {
+      position: absolute;
+      top: 20%;
+      left: 55%;
+  
+      h1{
+        font-size: $heading_font;
+      } 
+      p{
+        font-size: $paragraph_font1;    
+          }
+    }
+  
+  /*inspire imagination*/
+  .costumes {
+    align-items: center;
+    justify-items: center;
+  }
+  .costume_button {
+    @include button;
+  }
+  
+  .unique_section {
+    display: flex;
+   
+  }
+  
+ 
+  /*small css*/
